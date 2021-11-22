@@ -1,4 +1,3 @@
-/*
 //using old string version
 let oldString = "Turkey's town names: \nIstanbul \nIzmir \nAnkara"
 console.log(oldString)
@@ -45,7 +44,7 @@ const newPerson =   `<p>${studentName}</p> `+
                     `<p>${department}</p> `
 
 document.body.innerHTML = newPerson
-*/
+
 
 // extra example
 const bookName = `The Tempest`
