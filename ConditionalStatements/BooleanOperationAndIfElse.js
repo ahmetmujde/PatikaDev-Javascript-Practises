@@ -50,3 +50,25 @@ if(x > y) {
 else {
     console.log(`${x} smaller than ${y} `);
 }
+
+//multiple if statement
+let userName = prompt("Please enter the user name: ")
+let age = prompt("Please enter the your age")
+let info = document.querySelector("#info")
+let infoValue = document.getElementById("#info")
+
+
+
+if((!userName) || (!age)){
+    info.innerHTML = "user name or age not be null"
+    info.style.color = "red"
+}
+else{
+    if(18 <= age){
+        info.innerHTML = `you can get driving licence`
+        info.style.color = "green"
+    } 
+    else{
+        info.innerHTML = `you cannot get driving licence`
+    }
+}
