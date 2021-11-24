@@ -51,6 +51,7 @@ else {
     console.log(`${x} smaller than ${y} `);
 }
 
+/*
 //multiple if statement
 let userName = prompt("Please enter the user name: ")
 let age = prompt("Please enter the your age")
@@ -72,3 +73,13 @@ else{
         info.innerHTML = `you cannot get driving licence`
     }
 }
+*/
+
+
+//using ternary operator 
+//statment ? [statment is true] : [statment is false] 
+let userName = prompt("enter the username: ")
+let info = document.querySelector("#info")
+
+info.innerHTML = `${userName ? userName : "wasn't find user information"}`
+
