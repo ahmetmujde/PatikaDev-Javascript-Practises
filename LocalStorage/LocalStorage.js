@@ -1,3 +1,5 @@
+//introduce to local Storage
+
 // add value to  local storage
 let nameValue = "Kodluyoruz"
 localStorage.setItem("exampleName",nameValue)
@@ -36,3 +38,19 @@ console.log(localStorage.getItem("list"))
 console.log(JSON.parse(localStorage.getItem("list")))
 
 
+//using localstorage in example
+let counter  = localStorage.getItem('counter') ? Number(localStorage.getItem('counter')) : 0;
+let counterDOM = document.querySelector("#counter")
+let increaseDOM = document.querySelector("#increase")
+let decreaseDOM = document.querySelector("#decrease")
+
+counterDOM.innerHTML = counter
+
+increaseDOM.addEventListener("click",clickEvent)
+decreaseDOM.addEventListener("click",clickEvent)
+
+function clickEvent(){
+    this.id == "increase" ? counter += 1 : counter -= 1
+    localStorage.setItem("counter",counter)
+    counterDOM.innerHTML = counter
+}
