@@ -38,3 +38,28 @@ arr.forEach((item, index) => {
 });
 
 
+let newArray = [10, 20, 30, 40]
+console.log("first statment:",newArray)
+
+// add value to end of array
+newArray.push(50)
+
+// add value to first of array
+newArray.unshift(0)
+console.log("final state of array after adding values:",newArray)
+
+//subtraction value to last of array
+let lastItemArray = newArray.pop()
+console.log("last item: ", lastItemArray)
+
+//subtraction value to first of array
+let firstItemArray = newArray.shift()
+console.log("first item: ", firstItemArray)
+
+console.log("final state of array after subtraction values:",newArray)
+
+//change value in array
+newArray[0] = 5;
+newArray[newArray.length - 1] = 75
+
+console.log(newArray)
